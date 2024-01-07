@@ -34,9 +34,20 @@ namespace JokeWebAPP.Controllers
         // GET: Jokes/ShowSeacrhForm
         public async Task<IActionResult> ShowSearchForm()
         {
-            return _context.Joke != null
-                ? View(await _context.Joke.ToListAsync())
-                : Problem("Entity set 'ApplicationDbContext.Joke' is null.");
+            {
+                return _context.Joke != null ?
+                            View(await _context.Joke.ToListAsync()) :
+                            Problem("Entity set 'ApplicationDbContext.Joke'  is null.");
+            }
+        }
+
+        // POST: Jokes/ShowSeacrhResults
+        public async Task<IActionResult> ShowSeacrhResults(String SearchPhrase)
+        {
+            return _context.Joke != null ?
+                           View("Index", await _context.Joke.Where(j => j.JokeQuestion.Contains(SearchPhrase)).ToListAsync()) :
+                           Problem("Entity set 'ApplicationDbContext.Joke'  is null.");
+
         }
 
         // GET: Jokes/Details/5
