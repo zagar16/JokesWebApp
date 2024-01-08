@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using JokeWebAPP.Data;
 using JokeWebAPP.Models;
+using Microsoft.AspNetCore.Authorization;
 
 // created by: adding new contoller (mvc contoller with views, using Entity Framework), model class: Joke class, Data context: ApplicationDbContext
 // that also created folder Views/Jokes with all 5 cshtml files with it
@@ -69,6 +70,7 @@ namespace JokeWebAPP.Controllers
         }
 
         // GET: Jokes/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -77,6 +79,7 @@ namespace JokeWebAPP.Controllers
         // POST: Jokes/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,JokeQuestion,JokeAnswer")] Joke joke)
@@ -91,6 +94,7 @@ namespace JokeWebAPP.Controllers
         }
 
         // GET: Jokes/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Joke == null)
@@ -109,6 +113,7 @@ namespace JokeWebAPP.Controllers
         // POST: Jokes/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,JokeQuestion,JokeAnswer")] Joke joke)
@@ -142,6 +147,7 @@ namespace JokeWebAPP.Controllers
         }
 
         // GET: Jokes/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Joke == null)
@@ -162,6 +168,7 @@ namespace JokeWebAPP.Controllers
         // POST: Jokes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Joke == null)

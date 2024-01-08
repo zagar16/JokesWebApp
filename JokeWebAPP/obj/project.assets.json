@@ -11133,11 +11133,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GithubProjekti\\JokeWebAPP\\JokeWebAPP\\JokeWebAPP.csproj",
+      "projectUniqueName": "C:\\GithubProjekti\\JokesWebApp\\JokeWebAPP\\JokeWebAPP.csproj",
       "projectName": "JokeWebAPP",
-      "projectPath": "C:\\GithubProjekti\\JokeWebAPP\\JokeWebAPP\\JokeWebAPP.csproj",
+      "projectPath": "C:\\GithubProjekti\\JokesWebApp\\JokeWebAPP\\JokeWebAPP.csproj",
       "packagesPath": "C:\\Users\\zagar\\.nuget\\packages\\",
-      "outputPath": "C:\\GithubProjekti\\JokeWebAPP\\JokeWebAPP\\obj\\",
+      "outputPath": "C:\\GithubProjekti\\JokesWebApp\\JokeWebAPP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zagar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11212,7 +11212,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

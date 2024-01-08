@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jgBhSDjdiQnUUUIWr+96m8Fi+3+BG60OoGaMgCo/3st0hlyRKvUJrMmjgFyLdJhs432WWflnm1p29mJvozWKrA==",
+  "dgSpecHash": "h64n+o7jEOznT7smr7yL1VGv33EvBUa//XX7pG9ac2c+Z1AwFR1nK+F0kJIJBk0MQV4Ggfz4ezOG3OyA4zvjMA==",
   "success": true,
-  "projectFilePath": "C:\\GithubProjekti\\JokeWebAPP\\JokeWebAPP\\JokeWebAPP.csproj",
+  "projectFilePath": "C:\\GithubProjekti\\JokesWebApp\\JokeWebAPP\\JokeWebAPP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zagar\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\zagar\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
